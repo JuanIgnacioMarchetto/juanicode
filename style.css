@@ -4,28 +4,32 @@ body {
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: #fff;
 }
+
 .a {
     color: #fff;
     text-decoration: none;
-    font-size: 28px;   
-    background: #333;    
-    border-radius:40%;
-    
+    font-size: 28px;
+    background: #333;
+    border-radius: 40%;
+
     text-align: center;
-   }
+}
+
 .a2 {
     color: #fff;
-   text-decoration: none;
-   text-align: center;
-   font-size: 28px;   
-   background: #333;    
-   border-radius:20%;
-   
-  }
+    text-decoration: none;
+    text-align: center;
+    font-size: 28px;
+    background: #333;
+    border-radius: 20%;
+
+}
+
 .text {
     filter: contrast(5px);
     filter: blur(-25px);
@@ -33,9 +37,10 @@ a{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
     border-radius: 40%;
-    font-size: 28px;   
+    font-size: 28px;
     text-align: center;
-      }
+}
+
 .showcase::after {
     content: '';
     height: 60vh;
@@ -134,32 +139,33 @@ footer {
 footer p {
     margin: 0;
 }
+
 .container {
     margin: auto;
     width: 500px;
     overflow: auto;
     padding: 3rem 2rem;
-  }
-  
-  #my-form {
+}
+
+#my-form {
     padding: 2rem;
-    background:url(./pexels-photo-450035.jpeg);
+    background: url(./pexels-photo-450035.jpeg);
     color: aquamarine;
-  }
-  
-  #my-form label {
+}
+
+#my-form label {
     display: block;
-  }
-  
-  #my-form input[type='text'] {
+}
+
+#my-form input[type='text'] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid rgb(114, 33, 33);
-  }
-  
-  .btn {
+}
+
+.btn {
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -168,23 +174,23 @@ footer p {
     color: #fff;
     border-radius: 5px;
     margin: 5px 0;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background: #444;
-  }
-  
-  .bg-dark {
+}
+
+.bg-dark {
     background: #333;
     color: #fff;
-  }
-  
-  .error {
+}
+
+.error {
     background: orangered;
     color: #fff;
     padding: 5px;
     margin: 5px;
-  }
+}
 
 /* Small Screens */
 @media (max-width: 560px) {
@@ -228,8 +234,9 @@ footer p {
     .content {
         top: 0;
     }
+
     .content .logo {
-      position: absolute;
-      top: 335px;
+        position: absolute;
+        top: 335px;
     }
 }
