@@ -1,23 +1,161 @@
-body {
-    background: rgba(0, 0, 0, 0.9);
+* {
+    padding: 0;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+body {
+   
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.9);
     color: #fff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+.imagenes{width: 150px;
+height:150px;}
 a {
     text-decoration: none;
     color: #fff;
 }
-
+ul {
+    clear: both;}
+  
+  li {
+    width: 150px;
+    height: 150px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    float: left;
+    list-style: none;
+    position: relative;
+    perspective: 800px;}
+  
+  li:nth-child(4), li:nth-child(8){
+    margin-right: 0;}
+  
+  ul a {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    color: white;
+    padding-top:60px;
+    padding-left: 20px;
+    text-decoration: none;}
+  
+    ul .back{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  ul img {
+      width: 135px;
+    height: 135px;
+    margin-left: auto;
+    margin-right: auto;
+    ;
+  display: flex;
+align-items: center;
+justify-content: center;}
+  
+  .xl a {
+    height: 138px;
+    padding-top: 62px;
+    line-height: 32px;}
+  
+  p {
+    color:black;
+    font-size: 1.05em;}
+  
+  p a {color: black;}
+  
+  
+  #region1 .c1 {background-color: #F0AA31;}
+  #region1 .c2 {background-color: #CD4270;}
+  #region1 .c3 {background-color: #458E4B;}
+  #region1 .c4 {background-color: #4D92CC;}
+  #region1 .c5 {background-color: #EFEA42;}
+  #region1 .c6 {background-color: #ECB7D0;}
+  #region1 .c7 {background-color: #ECC374;}
+  #region1 .c8 {background-color: #E98B2E;}
+  
+  #region2 .c1 {background-color: #EB4F43;}
+  #region2 .c2 {background-color: #EED348;}
+  #region2 .c3 {background-color: #062F55;}
+  #region2 .c4 {background-color: #51A50E;}
+  #region2 .c5 {background-color: #F1AAD7;}
+  #region2 .c6 {background-color: #A0F02F;}
+  #region2 .c7 {background-color: #ECC374;}
+  #region2 .c8 {background-color: #E98B2E;}
+  
+  #region3 .c1 {background-color: #4BA158;}
+  #region3 .c2 {background-color: #2E90D5;}
+  #region3 .c3 {background-color: #9C7D46;}
+  #region3 .c4 {background-color: #45A198;}
+  #region3 .c5 {background-color: #C73A39;}
+  #region3 .c6 {background-color: #DD9E2B;}
+  #region3 .c7 {background-color: #979799;}
+  #region3 .c8 {background-color: #CA4488;}
+  
+  #region4 .c1 {background-color: #418242;}
+  #region4 .c2 {background-color: #D26F2B;}
+  #region4 .c3 {background-color: #C93B3D;}
+  #region4 .c4 {background-color: #E09B2C;}
+  #region4 .c5 {background-color: #9D5B9B;}
+  #region4 .c6 {background-color: #305AA4;}
+  #region4 .c7 {background-color: #CD4588;}
+  #region4 .c8 {background-color: #795724;}
+  
+ 
+  .tile {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+            transition: transform 1s;
+  }
+  
+  .tile figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;}
+  
+  .tile .back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );}
+  
+  .tile:hover {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );}
 .a {
     color: #fff;
     text-decoration: none;
     font-size: 28px;
+    width: 20%;
+    position: relative;
     background: #333;
     border-radius: 40%;
-
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .a2 {
@@ -42,9 +180,9 @@ a {
 }
 
 .showcase::after {
+    width: 99%;
     content: '';
     height: 60vh;
-    width: 100%;
     background-image: url(./pexels-photo-450035.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -56,16 +194,19 @@ a {
 }
 
 .showcase:hover::after {
+    
     filter: blur(0px);
     -webkit-filter: blur(0px);
 }
 
 .showcase:hover .content {
+   
     filter: blur(2px);
     -webkit-filter: blur(2px);
 }
 
 .content {
+    width: 90%;
     position: absolute;
     z-index: 1;
     top: 10%;
@@ -84,7 +225,7 @@ a {
     width: 150px;
     border-radius: 50%;
     border: #333 dotted 2px;
-    margin-top: -52%;
+    margin-top: -45%;
     margin-left: -25%;
 }
 
@@ -95,25 +236,27 @@ a {
 
 .content .text {
     line-height: 1.7;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .container {
-    max-width: 960px;
+    width: 90%;
     margin: auto;
     overflow: hidden;
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
 }
 
 .grid-3 {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-}
+   
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    width: 85%;
+    padding-bottom: 5em;}
 
 .grid-2 {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -133,7 +276,7 @@ a {
 }
 
 footer {
-    padding: 2.2rem;
+    padding: 2em;
 }
 
 footer p {
@@ -142,9 +285,10 @@ footer p {
 
 .container {
     margin: auto;
-    width: 500px;
+    display: flex;
     overflow: auto;
-    padding: 3rem 2rem;
+    align-items: center;
+    justify-content: center;
 }
 
 #my-form {
@@ -204,6 +348,9 @@ footer p {
     }
 
     .content .logo {
+        position: relative;
+        top:20em;
+        left: 2em;
         height: 140px;
         width: 140px;
     }
@@ -212,11 +359,7 @@ footer p {
         display: none;
     }
 
-    .grid-3,
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-
+    
     .services div {
         border-bottom: #333 dashed 1px;
         padding: 1.2rem 1rem;
@@ -237,6 +380,6 @@ footer p {
 
     .content .logo {
         position: absolute;
-        top: 335px;
+        top: 330px;
     }
 }
