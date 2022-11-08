@@ -26,7 +26,7 @@ body {
     align-items: center;
     width: 150px;
     height: 150px;
-    ma
+    
 }
 
 
@@ -205,7 +205,15 @@ p a {
     text-align: start;
     font-size: 28px;
     background: #333;
-    border-radius: 20%;
+    border-radius: 10%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: white solid 5px;
+    border-right: #444 double 4px;
+    border-left: #999999 double 4px;
+    border-top: lightgrey solid 5px;
 
 }
 
@@ -269,8 +277,8 @@ p a {
     border-right: #444 double 4px;
     border-left: #999999 double 4px;
     border-top: lightgrey solid 5px;
-    margin-top: -45%;
-    margin-left: -25%;
+    margin-top: -50%;
+    margin-left: -28%;
 }
 
 .content .title {
