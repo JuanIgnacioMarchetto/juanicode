@@ -42,8 +42,8 @@ ul {
 li {
     width: 150px;
     height: 150px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     float: left;
     list-style: none;
     position: relative;
@@ -151,6 +151,9 @@ p a {
 
 #region1 .c8 {
     background-color: #E98B2E;
+}
+.services{
+    margin-top: -1.5em;
 }
 
 .tile {
@@ -292,7 +295,7 @@ p a {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
@@ -302,13 +305,13 @@ p a {
 
 .grid-3 {
 
-    grid-template-columns: 25% 25% ;
+    grid-template-columns: 100% ;
     grid-column-gap: 2em;
     grid-row-gap: 1em;
    justify-content: center;
    align-items: center;
     padding-bottom: 2.5em;
-    padding-top: 0.3;
+    margin-top: -15px;
     margin-right: auto;
     margin-left: auto;
 }
