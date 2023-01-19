@@ -8,7 +8,7 @@
 
 body {
 
-    width:90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     background: rgba(0, 0, 0, 0.9);
@@ -20,13 +20,14 @@ body {
     width: 150px;
     height: 150px;
 }
+
 .imagenes2 {
-    
+
     width: 130px;
     height: 130px;
     margin-top: -25px;
-   display: flex;
-    
+    display: flex;
+
 }
 
 
@@ -72,7 +73,7 @@ ul a {
 }
 
 
-h2{
+h2 {
     font-size: 1.3em;
 }
 
@@ -80,6 +81,10 @@ ul .back {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.foot {
+    font-size: 15px;
 }
 
 ul img {
@@ -152,10 +157,18 @@ p a {
 #region1 .c8 {
     background-color: #E98B2E;
 }
-.services{
+
+.services {
     margin-top: -1.5em;
 }
+.tile2{display: grid;
+    margin-bottom: 55px;
+}
+.tile2 img
+{
 
+    border: double 5px darkmagenta;
+}
 .tile {
     margin-top: 3em;
     display: grid;
@@ -230,11 +243,14 @@ p a {
     font-size: 22px;
     text-align: center;
 }
-.studios{
+
+.studios {
     width: 50%;
     display: flex;
     float: left;
+
 }
+
 
 .showcase::after {
     width: 99%;
@@ -299,14 +315,21 @@ p a {
     margin-top: 2rem;
 }
 
+.region3 {
+    display: flex;
+    float: right;
+   margin-left: 5%;
+}
+
 .container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
     padding: 1.5rem 1.5rem;
-    
+
 }
+
 .container2 {
     width: 80%;
     margin-right: auto;
@@ -314,29 +337,36 @@ p a {
     overflow: hidden;
     padding-left: 30px;
     padding-right: 30px;
-    
+
 }
 
 .grid-3 {
 
-    grid-template-columns: 100% ;
+    grid-template-columns: 100%;
     grid-column-gap: 2em;
     grid-row-gap: 1em;
-   justify-content: center;
-   align-items: center;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 2.5em;
     margin-top: -15px;
     margin-right: auto;
     margin-left: auto;
 }
-
-.worck {
-    margin-top: 2em;
+.knowledge{
+    color: violet;
 }
-
+.knowledge p{
+    color: darkorchid;
+}
+.worck {
+    width: 80%;
+    justify-content: space-between;
+    
+};
+}
 .grid-2 {
     padding-top: 1.5em;
-    
+
     grid-gap: 2px;
     grid-template-columns: 75%;
 }
@@ -416,5 +446,3 @@ footer p {
     padding: 5px;
     margin: 5px;
 }
-
-    
