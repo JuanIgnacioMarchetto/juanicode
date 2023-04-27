@@ -1,5 +1,38 @@
-// ATTENTION: THIS IS CODE FROM THE YOUTUBE CRASH COURSE. IT IS NOT MEANT TO RUN, IT IS JUST FOR LEARNING PURPOSES //
 
+onst form = document.getElementById('my-form');
+const formUrl = form.getAttribute('action');
+
+form.addEventListener('submit', async (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(form);
+
+  try {
+    const response = await fetch(formUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(Object.fromEntries(formData.entries()))
+    });
+
+    if (response.ok) {
+      // Si la respuesta es exitosa, muestra un mensaje de éxito
+      alert('Tu mensaje ha sido enviado con éxito!');
+      form.reset();
+    } else {
+      // Si hay un error en el servidor, muestra un mensaje de error
+      alert('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.');
+    }
+  } catch (error) {
+    // Si hay un error en la conexión, muestra un mensaje de error
+    alert('Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.');
+  }
+});
+
+
+
+/*S //
 // LOGGING OUTPUT
 alert('Hello World'); // Do not use for debugging. Stops script and only strings
 console.log('Hello World');
@@ -376,4 +409,4 @@ function onSubmit(e) {
     nameInput.value = '';
     emailInput.value = '';
   }
-}
+}*/
