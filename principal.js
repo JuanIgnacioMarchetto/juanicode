@@ -1,5 +1,5 @@
 
-onst form = document.getElementById('my-form');
+const form = document.getElementById('my-form');
 const formUrl = form.getAttribute('action');
 
 form.addEventListener('submit', async (event) => {
