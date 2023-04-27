@@ -1,24 +1,25 @@
-
 const form = document.getElementById('my-form');
-const formUrl = form.getAttribute('action');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
 
-form.addEventListener('submit', async (event) => {
-  event.preventDefault();
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  sendEmail(nameInput.value, emailInput.value, messageInput.value);
+  form.reset();
+});
 
-  const formData = new FormData(form);
-
-  try {
-    const response = await fetch(formUrl, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(Object.fromEntries(formData.entries()))
-    });
-
-    if (response.ok) {
-      // Si la respuesta es exitosa, muestra un mensaje de éxito
-      alert('Tu mensaje ha sido enviado con éxito!');
+function sendEmail(name, email, message) {
+  Email.send({
+    Host: "smtp.gmail.com",
+    Username: "TU_EMAIL",
+    Password: "TU_PASSWORD",
+    To: "juanignaciomarchetto@gmail.com",
+    From: "TU_EMAIL",
+    Subject: "Nuevo mensaje de formulario",
+    Body: `Nombre: ${name} <br> Email: ${email} <br> Mensaje: ${message}`,
+  }).then((message) => alert("¡Mensaje enviado con éxito!"));
+}
       form.reset();
     } else {
       // Si hay un error en el servidor, muestra un mensaje de error
